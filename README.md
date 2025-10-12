@@ -1,7 +1,7 @@
 # rviz-3d-nav-goal-fixed-z
-
-只需把这两个文件覆盖到你的 rviz_plugins 包里， `catkin_make`后重新运行示例，使用3D Nav Goal选择目标点即可规划路径。
-也可点击rviz左上角**Panels**选择 **Tool Properties** 在**3D Nav Goal**里看到 **Default Z** 输入框，根据情况修改为不为0的数。
+针对https://github.com/ZJU-FAST-Lab/3D2M-planner.git中直接运行例程无法规划路径的修补
+覆盖 rviz_plugins 包中这两个文件， `catkin_make`后重新运行示例，使用3D Nav Goal选择目标点即可规划路径。
+后续可点击rviz左上角**Panels**选择 **Tool Properties** ，在**3D Nav Goal**里看到 **Default Z** 输入框，根据情况修改z值。
 
 ## Usage
 1. 备份原 `goal_tool.h` / `goal_tool.cpp`
